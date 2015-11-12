@@ -1,4 +1,4 @@
-package TD3;
+package fr.uvsq.coo.ex3_1;
 /*
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -39,6 +39,9 @@ public class AppTest
 
 */
 import org.junit.Test;
+
+import fr.uvsq.coo.ex3_1.MyUnit;
+
 import static org.junit.Assert.*;
 
 public class MyUnitTest {
