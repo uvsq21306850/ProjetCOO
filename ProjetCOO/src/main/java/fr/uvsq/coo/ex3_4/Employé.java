@@ -1,16 +1,18 @@
 package fr.uvsq.coo.ex3_4;
 
 public class Employé extends Salarié {
+	int anciennete ;
 
-	public Employé () {
+	public Employé (int an) {
+		this.anciennete = an ;
 		
-		this.salaire = 1500 + 20/12  ;
+		
 	}
 
 	@Override
 	public double calcul_salaire() {
 
-		return 1500 + 20/12  ;
+		return 1500 + 20*this.anciennete ;
 	}
 
 }

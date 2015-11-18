@@ -2,9 +2,10 @@ package fr.uvsq.coo.ex3_4;
 
 public class Vendeur extends Salarié {
 	double commission ;
+	int anciennete ;
 	
-	public Vendeur (double com) {
-		this.salaire = 1500 + 20/12  ; 
+	public Vendeur (int an ,double com) {
+		anciennete = an ;
 		commission  = com ;
 		
 	}
@@ -12,7 +13,7 @@ public class Vendeur extends Salarié {
 	@Override
 	public double calcul_salaire() {
 		
-		return 1500 + 20/12 + commission ;
+		return 1500 + 20*anciennete + commission ;
 	}
 
 }
