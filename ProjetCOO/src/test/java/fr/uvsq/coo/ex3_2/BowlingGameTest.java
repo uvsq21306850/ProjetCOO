@@ -29,6 +29,10 @@ public class BowlingGameTest extends TestCase {
 	g.roll(1);
 	assertEquals(20, g.score());
 	}
+	private void rollSpare() {
+		g.roll(5);
+		g.roll(5);
+		}
 	public void testOneSpare() throws Exception {
 		rollSpare();
 		g.roll(3);
@@ -49,10 +53,7 @@ public class BowlingGameTest extends TestCase {
 	private void rollStrike() {
 		g.roll(10);
 		}
-	private void rollSpare() {
-		g.roll(5);
-		g.roll(5);
-		}
+	
 		
 
 }
